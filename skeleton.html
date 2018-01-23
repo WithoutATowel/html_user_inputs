@@ -1,35 +1,52 @@
-general_assembly_logo.png
+<img src="general_assembly_logo.png">
 
-General Assembly Account Creation
+<h1>General Assembly Account Creation</h1>
 
-Welcome to the General Assembly. General Assembly is a global
+<p>Welcome to the General Assembly. General Assembly is a global
 institution training people all over the world in today's top
-technologies.
+technologies.</p>
 
-Please fill out the information below to create your General Assembly
+<p>Please fill out the information below to create your General Assembly
 account. Let us know what city you're in and what course
 you're taking. This list is for all students. Please tell us what
 city you're in and whether you're taking the Immersive User Experience (UX)
-course or the Immersive Web Development course. 
+course or the Immersive Web Development course.</p>
 
-City:
-  Hong Kong
-  London
-  Los Angeles
-  New York
-  Portland
-  San Francisco
-  Seattle
-  Singapore
+<form method="get" action="success.html">
+  
+  <label for="city">City:</label>
+  <select id="city" name="city" >
+    <option>Hong Kong</option>
+    <option>London</option>
+    <option>Los Angeles</option>
+    <option>New York</option>
+    <option>Portland</option>
+    <option>San Francisco</option>
+    <option selected="selected">Seattle</option>
+    <option>Singapore</option>
+  </select>
+  <br><br>
 
-Course:
-  (0) UX
-  ( ) Web Dev
+  <label for="">Course:</label>
+  <input type="radio" name="course" value="UX">UX</input>
+  <input type="radio" name="course" value="Web Dev" checked>Web Dev</input>
+  <br><br>
 
-Name:     _________
-Email:    _________
-Password: *********
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+  <br><br>
 
-[] Yes, subscribe me to the General Assembly student newsletter
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+  <br><br>
 
-[Subscribe]
+  <label for="password">Password:</label>
+  <input type="password" id="password">
+  <br><br>
+
+  <input type="checkbox" id="newsletter" name="newsletter">
+  <label for="newsletter">Yes, subscribe me to the General Assembly student newsletter</label>
+  <br><br>
+
+  <input type="submit" value="Subscribe">
+</form>
